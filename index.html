@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NumberGuesser</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,200,300,600" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <h1>Number <span class="guesser-text">Guesser</span></h1>
+    </header>
+
+    <section class="guess-input-container">
+      <div>
+        <input class="guess-input-actual" type="number" placeholder="Enter Your Guess Here">
+
+        <button id="submit" class="btn-standard game-start-btn resp-submit" disabled>Guess</button>
+
+        <button id="clearInput" class="btn-standard game-start-btn resp-clear" disabled>Clear</button>
+      </div>
+    </section>
+
+    <section class="guess-return-container">
+
+      <div class="guess-describer">
+          <p>Your Last Guess Was</p>
+      </div>
+
+      <div>
+        <p class="return-guess-text">Guess a number less than 10</p>
+      </div>
+
+      <div>
+        <p id="evaluated-declaration" class="guess-describer">Freshy Fresh</p>
+      </div>
+
+    </section>
+
+
+    <div class="reset-btn-container">
+      <div class="status-display">
+        <p>Guess a number between 1 and <span id="range-display">10</span></p>
+        <p>Last 5 guesses were:<span id="previous-guess-display">555</span></p>
+        <p>Score:<span id="score-display"></span></p>
+      </div>
+      <button id="reset-btn" class="btn-standard">Reset</button>
+    </div>
+
+  <script type="text/javascript" src="script.js"></script>
+  </body>
+  </html>
